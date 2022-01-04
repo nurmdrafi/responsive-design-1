@@ -1,0 +1,78 @@
+body {
+  font-size: 1.125rem;
+  color: #707070;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  color: #212614;
+  text-align: center;
+}
+
+h1::selection {
+  color: pink;
+}
+
+h1 span {
+  color: pink;
+}
+
+h1 span::selection {
+  color: black;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container img {
+  width: 100%;
+  cursor: pointer;
+  /* max-width: 100%; */ /*Prevent blur*/
+}
+.columns {
+  display: flex;
+  margin: 1em 0;
+  justify-content: space-between;
+  /*column gap and redeuce 5% width of column*/
+}
+
+.col-bg {
+  background-color: darkslategray;
+  color: whitesmoke;
+  padding: 1em;
+  
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+@media (max-width: 650px) {
+
+  .columns {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+  .col-bg{
+    box-sizing: border-box;
+  }
+}
